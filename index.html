@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phoenix Entertainment Studios — Mobile Games That Rise</title>
+<meta name="description" content="Phoenix Entertainment Studios crafts bold, addictive mobile games built by a small team with big ambitions.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="loader" aria-hidden="true">
+  <svg class="loader-phoenix" width="72" height="72" viewBox="0 0 100 100">
+    <path d="M50 10 C 65 25, 75 40, 65 55 C 80 50, 88 35, 85 20 C 95 35, 95 60, 78 75 C 90 72, 98 62, 100 50 C 98 78, 75 98, 50 95 C 25 98, 2 78, 0 50 C 2 62, 10 72, 22 75 C 5 60, 5 35, 15 20 C 12 35, 20 50, 35 55 C 25 40, 35 25, 50 10 Z" />
+  </svg>
+</div>
+
+<canvas id="embers"></canvas>
+
+<header id="site-header">
+  <div class="container nav-inner">
+    <a href="#top" class="brand" aria-label="Phoenix Entertainment Studios — home">
+      <svg class="brand-mark" width="30" height="30" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M50 10 C 65 25, 75 40, 65 55 C 80 50, 88 35, 85 20 C 95 35, 95 60, 78 75 C 90 72, 98 62, 100 50 C 98 78, 75 98, 50 95 C 25 98, 2 78, 0 50 C 2 62, 10 72, 22 75 C 5 60, 5 35, 15 20 C 12 35, 20 50, 35 55 C 25 40, 35 25, 50 10 Z" />
+      </svg>
+      <span>Phoenix<em>Studios</em></span>
+    </a>
+
+    <nav class="primary-nav" aria-label="Primary">
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="#careers">Careers</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-ghost nav-cta">Get in touch</a>
+
+    <button id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <nav id="mobile-nav" aria-label="Mobile">
+    <a href="#games">Games</a>
+    <a href="#about">About</a>
+    <a href="#careers">Careers</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <p class="eyebrow reveal">Independent Mobile Game Studio</p>
+      <h1 class="reveal">
+        We build games <span class="fire-text">that rise.</span>
+      </h1>
+      <p class="hero-sub reveal">
+        Phoenix Entertainment Studios is a small, fiercely independent team crafting
+        mobile games players can't put down — from idea, to launch, to legend.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#games" class="btn btn-primary">Explore Our Games</a>
+        <a href="#careers" class="btn btn-outline">Join the Flock</a>
+      </div>
+
+      <div class="scroll-cue reveal" aria-hidden="true">
+        <span></span>
+        Scroll
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Studio stats">
+    <div class="container stats-grid">
+      <div class="stat reveal">
+        <span class="stat-num" data-target="12" data-suffix="M+">0</span>
+        <span class="stat-label">Downloads</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-num" data-target="6" data-suffix="">0</span>
+        <span class="stat-label">Games Shipped</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-num" data-target="140" data-suffix="+">0</span>
+        <span class="stat-label">Countries Reached</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat-num" data-target="4.7" data-suffix="★" data-decimal="1">0</span>
+        <span class="stat-label">Average Store Rating</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="games" class="games">
+    <div class="container">
+      <p class="eyebrow reveal">Our Games</p>
+      <h2 class="reveal">Built small. Played everywhere.</h2>
+      <p class="section-sub reveal">Every title starts as a two-person prototype. The good ones don't stay small for long.</p>
+
+      <div class="game-grid">
+
+        <article class="game-card reveal">
+          <div class="game-art" style="--c1:#ff6b35; --c2:#ff2e63;">
+            <span class="game-icon">🔥</span>
+          </div>
+          <div class="game-body">
+            <div class="game-top">
+              <h3>Ember Rush</h3>
+              <span class="tag">Endless Runner</span>
+            </div>
+            <p>A blazing-fast runner where every mistake fuels your next comeback. Our first hit — and still climbing.</p>
+            <div class="game-meta">
+              <span>4.8 ★</span>
+              <span>3.2M+ downloads</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card reveal">
+          <div class="game-art" style="--c1:#7c5cff; --c2:#2ee6d6;">
+            <span class="game-icon">🏙️</span>
+          </div>
+          <div class="game-body">
+            <div class="game-top">
+              <h3>Skyfall Kingdoms</h3>
+              <span class="tag">City Builder</span>
+            </div>
+            <p>Floating cities, scarce resources, big decisions. A slow-burn strategy game players sink hundreds of hours into.</p>
+            <div class="game-meta">
+              <span>4.6 ★</span>
+              <span>1.8M+ downloads</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card reveal">
+          <div class="game-art" style="--c1:#00e5ff; --c2:#8a2be2;">
+            <span class="game-icon">🏎️</span>
+          </div>
+          <div class="game-body">
+            <div class="game-top">
+              <h3>Neon Drift</h3>
+              <span class="tag">Arcade Racer</span>
+            </div>
+            <p>One-thumb drifting through a synthwave city. Built for 90-second sessions on your commute.</p>
+            <div class="game-meta">
+              <span>4.7 ★</span>
+              <span>2.5M+ downloads</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card reveal">
+          <div class="game-art" style="--c1:#ffb703; --c2:#fb5607;">
+            <span class="game-icon">🧩</span>
+          </div>
+          <div class="game-body">
+            <div class="game-top">
+              <h3>Mystic Tiles</h3>
+              <span class="tag">Puzzle</span>
+            </div>
+            <p>A meditative match-and-craft puzzler with a story that unfolds one board at a time.</p>
+            <div class="game-meta">
+              <span>4.9 ★</span>
+              <span>4.1M+ downloads</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card reveal">
+          <div class="game-art" style="--c1:#3a86ff; --c2:#00f5d4;">
+            <span class="game-icon">⚔️</span>
+          </div>
+          <div class="game-body">
+            <div class="game-top">
+              <h3>Frostbound</h3>
+              <span class="tag">RPG Adventure</span>
+            </div>
+            <p>Our biggest world yet. A tactical RPG built from the ground up for touch.</p>
+            <div class="game-meta">
+              <span>Coming soon</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="game-card game-card--cta reveal">
+          <div class="game-body">
+            <h3>Got a wild idea?</h3>
+            <p>We're always prototyping. If you've got a pitch, a portfolio, or just an idea worth stealing — talk to us.</p>
+            <a href="#contact" class="btn btn-outline btn-sm">Pitch us</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container about-grid">
+      <div class="about-copy">
+        <p class="eyebrow reveal">About the Studio</p>
+        <h2 class="reveal">Small team. No shortcuts.</h2>
+        <p class="reveal">
+          Phoenix Entertainment Studios was founded on a simple bet: a small,
+          obsessive team can out-craft a big one. No committees, no filler content,
+          no games we wouldn't play ourselves.
+        </p>
+        <p class="reveal">
+          Every game we ship goes through the same fire — rapid prototyping,
+          brutal internal playtesting, and a refusal to launch anything that
+          doesn't feel great in the first ten seconds.
+        </p>
+        <a href="#contact" class="btn btn-primary reveal">Work with us</a>
+      </div>
+
+      <div class="values reveal">
+        <div class="value-card">
+          <span class="value-icon">🎯</span>
+          <h4>Player-first</h4>
+          <p>We design for the person holding the phone, not the spreadsheet.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">⚡</span>
+          <h4>Move fast</h4>
+          <p>Prototype in days, not quarters. Kill ideas quickly, ship the good ones faster.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🔥</span>
+          <h4>Craft over volume</h4>
+          <p>Six games we're proud of beats sixty we'd rather forget.</p>
+        </div>
+        <div class="value-card">
+          <span class="value-icon">🌍</span>
+          <h4>Built to travel</h4>
+          <p>Our games are designed from day one to work in any language, on any device.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="careers" class="careers">
+    <div class="hero-glow hero-glow--alt" aria-hidden="true"></div>
+    <div class="container careers-inner">
+      <p class="eyebrow reveal">Careers</p>
+      <h2 class="reveal">Join the flock.</h2>
+      <p class="section-sub reveal">We're a small remote-friendly team and we hire rarely — but when we do, it matters.</p>
+
+      <div class="roles reveal">
+        <div class="role-row">
+          <div>
+            <h4>Senior Gameplay Engineer</h4>
+            <span>Remote · Full-time</span>
+          </div>
+          <a href="mailto:careers@phoenixstudios.example?subject=Senior%20Gameplay%20Engineer" class="btn btn-outline btn-sm">Apply</a>
+        </div>
+        <div class="role-row">
+          <div>
+            <h4>Mobile UI/UX Designer</h4>
+            <span>Remote · Full-time</span>
+          </div>
+          <a href="mailto:careers@phoenixstudios.example?subject=Mobile%20UI%2FUX%20Designer" class="btn btn-outline btn-sm">Apply</a>
+        </div>
+        <div class="role-row">
+          <div>
+            <h4>Live Ops / Monetization Lead</h4>
+            <span>Remote · Full-time</span>
+          </div>
+          <a href="mailto:careers@phoenixstudios.example?subject=Live%20Ops%20Lead" class="btn btn-outline btn-sm">Apply</a>
+        </div>
+        <div class="role-row">
+          <div>
+            <h4>Don't see your role?</h4>
+            <span>We still want to hear from you</span>
+          </div>
+          <a href="mailto:careers@phoenixstudios.example?subject=General%20Application" class="btn btn-outline btn-sm">Say hi</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container contact-inner">
+      <p class="eyebrow reveal">Contact</p>
+      <h2 class="reveal">Let's talk.</h2>
+      <p class="section-sub reveal">Press, partnerships, publishing, or just to say our games are too addictive — reach out.</p>
+
+      <div class="contact-links reveal">
+        <a href="mailto:hello@phoenixstudios.example" class="contact-card">
+          <span class="contact-icon">✉️</span>
+          <div>
+            <strong>Email</strong>
+            <span>hello@phoenixstudios.example</span>
+          </div>
+        </a>
+        <a href="#" class="contact-card">
+          <span class="contact-icon">🐦</span>
+          <div>
+            <strong>Twitter / X</strong>
+            <span>@phoenixstudios</span>
+          </div>
+        </a>
+        <a href="#" class="contact-card">
+          <span class="contact-icon">💬</span>
+          <div>
+            <strong>Discord</strong>
+            <span>Join our community</span>
+          </div>
+        </a>
+        <a href="#" class="contact-card">
+          <span class="contact-icon">▶️</span>
+          <div>
+            <strong>YouTube</strong>
+            <span>Dev logs & trailers</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#top" class="brand brand-sm">
+      <svg class="brand-mark" width="22" height="22" viewBox="0 0 100 100" aria-hidden="true">
+        <path d="M50 10 C 65 25, 75 40, 65 55 C 80 50, 88 35, 85 20 C 95 35, 95 60, 78 75 C 90 72, 98 62, 100 50 C 98 78, 75 98, 50 95 C 25 98, 2 78, 0 50 C 2 62, 10 72, 22 75 C 5 60, 5 35, 15 20 C 12 35, 20 50, 35 55 C 25 40, 35 25, 50 10 Z" />
+      </svg>
+      <span>Phoenix<em>Studios</em></span>
+    </a>
+    <p>© <span id="year"></span> Phoenix Entertainment Studios. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="#games">Games</a>
+      <a href="#about">About</a>
+      <a href="#careers">Careers</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<button id="to-top" aria-label="Back to top">↑</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
