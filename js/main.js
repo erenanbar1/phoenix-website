@@ -62,42 +62,6 @@
     revealEls.forEach(el => el.classList.add('in-view'));
   }
 
-  /* ---------- Stat counters ---------- */
-  const stats = document.querySelectorAll('.stat-num');
-  const animateStat = (el) => {
-    const target = parseFloat(el.dataset.target || '0');
-    const suffix = el.dataset.suffix || '';
-    const decimals = parseInt(el.dataset.decimal || '0', 10);
-    const duration = 1400;
-    const start = performance.now();
-
-    const tick = (now) => {
-      const p = Math.min((now - start) / duration, 1);
-      const eased = 1 - Math.pow(1 - p, 3);
-      const value = target * eased;
-      el.textContent = value.toFixed(decimals) + suffix;
-      if (p < 1) requestAnimationFrame(tick);
-      else el.textContent = target.toFixed(decimals) + suffix;
-    };
-    requestAnimationFrame(tick);
-  };
-
-  if (stats.length) {
-    if ('IntersectionObserver' in window) {
-      const statIo = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            animateStat(entry.target);
-            statIo.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.6 });
-      stats.forEach(el => statIo.observe(el));
-    } else {
-      stats.forEach(animateStat);
-    }
-  }
-
   /* ---------- Embers canvas ---------- */
   const canvas = document.getElementById('embers');
   if (canvas && !prefersReducedMotion) {

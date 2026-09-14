@@ -1,6 +1,8 @@
 # Phoenix Entertainment Studios
 
-Marketing site for Phoenix Entertainment Studios, a mobile game development studio. Static HTML/CSS/JS — no build step.
+Marketing site for Phoenix Entertainment Studios, an independent mobile game studio and the maker of **Tilt Ball**. Static HTML/CSS/JS — no build step.
+
+Game assets (icon and screenshots) live in `assets/tiltball/`.
 
 ## Local preview
 
@@ -20,4 +22,4 @@ One-time setup:
 2. Under **Build and deployment → Source**, select **GitHub Actions**.
 3. Push to `main` — the site will build and publish automatically.
 
-The site will be available at `https://<username>.github.io/phoenix-website/`.
+The site will be available at `https://erenanbar1.github.io/phoenix-website/`.
