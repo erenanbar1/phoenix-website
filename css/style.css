@@ -426,6 +426,9 @@ section { position: relative; padding: 110px 0; }
 .feature-list li > span { font-size: 1.3rem; line-height: 1; margin-top: 2px; }
 .feature-list strong { display: block; color: var(--text); margin-bottom: 3px; font-size: 0.95rem; }
 
+.play-cta { margin-top: 28px; }
+.play-note { margin-top: 12px; font-size: 0.85rem; color: var(--text-dim); max-width: 460px; }
+
 /* Mechanic illustration */
 .mechanic {
   background: linear-gradient(180deg, var(--surface), var(--surface-2));
